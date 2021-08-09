@@ -60,8 +60,8 @@ plugins:
   - jekyll-include-cache              
                                       
 author:                               
-  name   : "Cious "                       
-  avatar : "/assets/images/bio-photo.jpg" 
+  name   : "Onwukanjo Innocent O. "                       
+  avatar : "/assets/images/bio-photo-2.jpg" 
   bio    : "DevOps Engineer"
   links:                                  
     - label: "Website"                    
