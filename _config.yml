@@ -4,39 +4,41 @@
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
-#
+#                  
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
-
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+                                                                                                 
+# Site settings                                                                                  
+# These are used to personalize your new site. If you look in the HTML files,                    
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.                  
+# You can create any custom variable you would like, and they will be accessible                 
+# in the templates via {{ site.myvariable }}.                                                    
+title: Cious Online                                                                              
+email: ciousdev@gmail.com                                                                        
+description: >- # this means to ignore newlines until "baseurl:"                                 
+  This is my simple blog, where i get to post my tech journey and so many other awesome         
+  research, articles and technical writings. It would be a reflection of my research skills
+  and my problem solving skills.         
+twitter_username: IOnwukanjo                                                                 
+github_username: Bliss911                                                                        
+minimal_mistakes_skin: default                                                                   
+search: true                                                                                     
+                                                                                                 
+# Build settings  
+repository: bliss911/bliss911.github.io                                                                               
+markdown: kramdown                                                                               
+remote_theme: mmistakes/minimal-mistakes 
+theme: minimal-mistakes-jekyll                                                        
+# Outputting                                                                                     
+permalink: /:categories/:title/                                                                  
+paginate: 5 # amount of posts to show    
+paginate_path: /page:num/                
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-include:
-  - _pages
-
-# Exclude from processing.
+                                         
+include:                                 
+  - _pages                               
+                                         
+# Exclude from processing.               
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
@@ -49,50 +51,56 @@ include:
 #   - vendor/ruby/
 
 # Plugins (previously gems:)
-plugins:
+plugins:          
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
+  - jekyll-gist   
+  - jekyll-feed   
+  - jemoji        
+  - jekyll-include-cache              
+                                      
+author:                               
+  name   : "Cious "                       
+  avatar : "/assets/images/bio-photo.jpg" 
+  bio    : "DevOps Engineer"
+  links:                                  
+    - label: "Website"                    
+      icon: "fas fa-fw fa-link"           
+      url: "https://bliss911.github.io"   
+    - label: "Twitter"                    
+      icon: "fab fa-fw fa-twitter-square" 
+      url: "https://twitter.com/IOnwukanjo"     
+    - label: "GitHub"                     
+      icon: "fab fa-fw fa-github"         
+      url: "https://github.com/bliss911"          
+    - label: "Instagram"                  
+      icon: "fab fa-fw fa-instagram"      
+      url: "https://instagram.com/innociousbliss"   
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in" 
+      url: "https://linkedin.com/in/innocent-onwukanjo-80591b160"  
+                                          
+footer:                                   
+  links:                                  
+    - label: "Twitter"                    
+      icon: "fab fa-fw fa-twitter-square" 
+      url: "https://twitter.com/IOnwukanjo"      
+    - label: "GitHub"                     
+      icon: "fab fa-fw fa-github"         
+      url: "https://github.com/bliss911"          
+    - label: "Instagram"                  
+      icon: "fab fa-fw fa-instagram"      
+      url: "https://instagram.com/innociousbliss" 
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in" 
+      url: "https://linkedin.com/in/innocent-onwukanjo-80591b160"     
+                                          
+defaults:                                 
+  # _posts                                
+  - scope:                                
+      path: ""                         
+      type: posts                      
+    values:                            
       layout: single
       author_profile: true
       read_time: true
@@ -113,3 +121,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
