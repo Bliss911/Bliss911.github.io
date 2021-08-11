@@ -21,18 +21,18 @@ description: >- # this means to ignore newlines until "baseurl:"
   and my problem solving skills.         
 twitter_username: IOnwukanjo                                                                 
 github_username: Bliss911                                                                        
-minimal_mistakes_skin: default                                                                   
+minimal_mistakes_skin: default                                                                
 search: true                                                                                     
                                                                                                  
 # Build settings  
 repository: bliss911/bliss911.github.io                                                                               
 markdown: kramdown                                                                               
-remote_theme: mmistakes/minimal-mistakes 
+# remote_theme: mmistakes/minimal-mistakes 
 theme: minimal-mistakes-jekyll                                                        
 # Outputting                                                                                     
 permalink: /:categories/:title/                                                                  
-paginate: 5 # amount of posts to show    
-paginate_path: /page:num/                
+paginate: 10 # amount of posts to show    
+paginate_path: recent/page:num/                
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
                                          
 include:                                 
